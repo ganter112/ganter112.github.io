@@ -1,0 +1,561 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+	<meta name="viewport" content="width=device-width, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/tab.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>El Tiempo</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <script>
+        const writeDate = () => {
+            const months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+            const week = ['lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo'];
+
+            const date = new Date();
+            const weekDay = week[date.getDay() - 1];
+            const day = date.getDate();
+            const month = months[date.getMonth()];
+            const year = date.getFullYear();
+            document.write(`${weekDay} ${day} DE ${month} DE ${year}`)
+        }
+    </script>
+    <script>
+        function dtime_nums(d, like_eu) {
+            const now = new Date;
+            now.setDate(now.getDate() + d);
+            let dayNum = "";
+            if (now.getDate() < 10) {
+                dayNum = "0"
+            }
+            dayNum += now.getDate();
+            let monthNum = "";
+            if (now.getMonth() + 1 < 10) {
+                monthNum = "0"
+            }
+            monthNum += now.getMonth() + 1;
+            if (like_eu === true) {
+                document.write(dayNum + "." + monthNum + "." + now.getFullYear())
+            } else {
+                document.write(monthNum + "." + dayNum + "." + now.getFullYear())
+            }
+        }
+    </script>
+    <header class="header">
+        <div class="top-header">
+            <div class="top-header-left ldp-js-date2">
+                <p style="text-transform: uppercase;" class="top-header__text main-text">
+                    <script>
+                        writeDate()
+                    </script>
+                </p>
+                <ul class="top-header-left__list list-reset">
+                    <li class="top-header-left__item">
+                        <a href=""><img src="img/twitter.svg" alt="social"></a>
+                    </li>
+                    <li class="top-header-left__item">
+                        <a href=""><img src="img/instagramm.svg" alt="social"></a>
+                    </li>
+                    <li class="top-header-left__item">
+                        <a href=""><img src="img/youtub.svg" alt="social"></a>
+                    </li>
+                    <li class="top-header-left__item">
+                        <a href=""><img src="img/facebook.svg" alt="social"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="top-header-right">
+                <a style="padding-right: 10px;" href=""><img src="img/search.svg" alt="search"></a>
+                <a style="padding: 11px 37px; background-color: #27AE60;" class="top-header-right__link" href=""> SUSCRIBIRME</a>
+                <a style="padding: 11px 29px;" class="top-header-right__link" href=""> INICIAR SESIÓN</a>
+                <a style="padding: 11px 19px; background: linear-gradient(265.65deg, #1796B4 0%, #21D6CE 100%);;" class="top-header-right__link link__star" href=""><img style="padding-right: 9px;" src="img/star.svg"> MIS NOTICIAS</a>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="main-header__logo">
+                <a href=""><img src="img/logo.png" alt="logo"></a>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <ul class="bottom-header__list list-reset">
+                <li class="bottom-header__item">
+                    <a href="" class="bottom-header__link"> OPINIÓN</a>
+                </li>
+                <li class="bottom-header__item">
+                    <a href="" class="bottom-header__link"> COLOMBIA</a>
+                </li>
+                <li class="bottom-header__item">
+                    <a href="" class="bottom-header__link"> BOGOTÁ</a>
+                </li>
+                <li class="bottom-header__item">
+                    <a href="" class="bottom-header__link"> INTERNACIONAL</a>
+                </li>
+                <li class="bottom-header__item">
+                    <a href="" class="bottom-header__link"> POLÍTICA</a>
+                </li>
+                <li class="bottom-header__item">
+                    <a href="" class="bottom-header__link"> JUSTICIA</a>
+                </li>
+                <li class="bottom-header__item">
+                    <a href="" class="bottom-header__link"> ECONOMÍA</a>
+                </li>
+                <li class="bottom-header__item">
+                    <a href="" class="bottom-header__link"> DEPORTES</a>
+                </li>
+                <li class="bottom-header__item">
+                    <a href="" class="bottom-header__link"> CULTURA</a>
+                </li>
+                <li class="bottom-header__item">
+                    <a href="" class="bottom-header__link"> TECNOLOGÍA</a>
+                </li>
+                <li class="bottom-header__item">
+                    <a href="" class="bottom-header__link"> VIDA </a>
+                </li>
+                <li class="bottom-header__item">
+                    <a href="" class="bottom-header__link"> SALUD </a>
+                </li>
+                <li class="bottom-header__item">
+                    <a href="" class="bottom-header__link"> UNIDAD INVESTIGATIVA</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section-one">
+            <div class="container section-one-container">
+                <div class="section-one-img">
+                    <a href=""><img src="img/hero.jpg" alt="hero"></a>
+                </div>
+                <h2 class="section-one__title"><mark> Se ha producido una revolución en la lucha contra la calvicie. Ha llegado al mercado un innovador tratamiento para el crecimiento del cabello. Pero no está al alcance de todos.</mark>
+                </h2>
+            </div>
+        </section>
+        <section class="section-two">
+            <div class="container section-two-container">
+                <div class="section-two-content">
+                    <div class="padding-fix">
+                    <h2 class="section-two__title"> Le Clere Sirene, un innovador medicamento contra la alopecia (calvicie), apareció recientemente en los mostradores de las farmacias colombianas. Ha sido especialmente apreciado por los hombres colombianos: ¡más del 90% de sus usuarios declararon haber recuperado al menos el 75% del cabello en menos de 3 meses! Parece que se ha encontrado un remedio absolutamente eficaz... pero pronto empezó a desaparecer de las farmacias. ¿Por qué? Nuestro corresponsal investigó el asunto.</h2>
+                    
+                    <a href=""><img style="padding-bottom: 20px;" class="section-two__img" src="img/before_after.jpg" alt="result"></a>
+                    <p style="text-align: center;font-style: italic;font-weight: 500; width: 100%; margin: 0 auto; margin-bottom: 20px;" class="section-two__text"> Más del 90% de los usuarios del producto declararon haber recuperado al menos el 75% del cabello en menos de 3 meses.</p>
+                    <p class="section-two__text margin-40"> Los principales tricólogos del mundo afirman que Le Clere Sirene es un producto absolutamente único. Durante la primera fase de los ensayos clínicos se obtuvieron resultados sorprendentes: el 100% (¡sólo hay que pensar en esta cifra!) de los hombres detuvo la caída del cabello y más del 60% se recuperó por completo después de 4 meses. La segunda y la tercera fase de las pruebas tuvieron aún más éxito, ya que más del 73% de los participantes en el estudio pudieron revertir completamente la alopecia.</p>
+                    <h2 class="section-two__title"> Dr. Miguel Álvarez, profesor, miembro de la Asociación Internacional de Tricología, practicante con 27 años de experiencia</h2>
+                    <a href=""><img style="margin-bottom: 20px;" class="section-two__img" src="img/cont1.jpg" alt="result"></a>
+                    <p class="section-two__text margin-20">“<a href="" class="black-link"> Le Clere Sirene </a> es un verdadero avance en el campo de la tricología. Quizás el descubrimiento más significativo que se ha hecho en nuestro campo en los últimos 15 años. Anteriormente, el principal tratamiento para la alopecia era la finasterida, un método bastante agresivo con muchas reacciones adversas para el hígado. Sin embargo, apenas superó el 30% de efectividad. Ahora, con
+                        <a href="" class="black-link"> Le Clere Sirene</a>, hemos aprendido a tratar la alopecia localmente, estimulando el crecimiento de los folículos pilosos inactivos y renovando las células del cuero cabelludo. Y el resultado es una eficacia de casi el 80%".</p>
+                        <a href=""><img style="padding-bottom: 15px;" class="section-two__img" src="img/cont2.jpg" alt="result"></a>
+                        <p style="text-align: center; width: 100%; margin: 0 auto; margin-bottom: 30px;" class="section-two__text"> 3 meses de terapia con medicamentos a base de finasterida</p>
+                        <a href=""><img style="padding-bottom: 15px;" class="section-two__img" src="img/cont3.jpg" alt="result"></a>
+                        <p style="text-align: center; width: 100%; margin: 0 auto; margin-bottom: 40px;" class="section-two__text"> 3 meses de terapia <a href="" class="black-link"> Le Clere Sirene</a></p>
+                    <h2 class="section-two__title margin-10"> ¿Por qué es tan eficaz Le Clere Sirene?</h2>
+                    <p class="section-two__text margin-20"> El producto es 100% natural: contiene aceites esenciales, extractos de hierbas silvestres y otros compuestos orgánicos que se encuentran en la naturaleza. A diferencia de la "química", se asimila en más de un 90%, ya que sus componentes son lo más parecido a la somatotropina, la hormona responsable del crecimiento del cabello en los hombres.</p>
+                    <p class="section-two__text margin-20"> El principio de acción de este preparado es bastante sencillo: las sustancias activas penetran en las capas profundas de la piel e influyen en los bulbos pilosos latentes (¿sabe que el vello visible es poco más del 2%, el resto permanece bajo la piel en forma de bulbos latentes?) Los bulbos se activan y comienza la renovación del cabello. Los bulbos jóvenes, llenos de vitaminas y minerales, producen un cabello fuerte y sano.</p>
+                    <a href=""><img style="margin-bottom: 40px;" class="section-two__img" src="img/cont4.jpg" alt="result"></a>
+                    <h2 class="section-two__title margin-10"> Los farmacéuticos frente a los colombianos</h2>
+                    <p class="section-two__text margin-20"><a href="" class="black-link"> Le Clere Sirene</a> causó sensación entre los hombres colombianos. Sin embargo, la "celebración" no duró mucho. Hace unos 3 meses, el medicamento empezó a desaparecer de las farmacias (Nota del editor: lo sé de primera mano, ya que 
+                        <a href="" class="black-link"> Le Clere Sirene</a> lo compró mi padre). Al principio era posible hacer un pedido anticipado, pero luego esa opción también desapareció. Durante algún tiempo,
+                        <a href="" class="black-link"> Le Clere Sirene</a> estuvo disponible a precios inflados en las clínicas de tricología... y la gente lo compraba de buena gana, pagando de más de 3 a 5 veces, porque no hay ningún equivalente en eficacia y seguridad a
+                        <a href="" class="black-link"> Le Clere Sirene</a> . Más tarde, el medicamento desapareció también de los hospitales. Ahora sólo está disponible en dos instituciones médicas de élite del país, aquellas en las que se trata a funcionarios y oligarcas.</p>
+                    <p class="section-two__text margin-40"> Según una fuente cercana al Ministerio de Sanidad, el motivo de la desaparición de<a href="" class="black-link"> Le Clere Sirene</a> de las farmacias es la guerra farmacéutica. Toda la industria de la alopecia se basaba en el uso de fármacos a base de finasterida y costosos tratamientos con láser, ¡y nadie quería renunciar a este mercado!</p>
+                    <h2 class="section-two__title margin-10"> ¿Tienen los colombianos la posibilidad de comprar Le Clere Sirene?</h2>
+                    <p class="section-two__text margin-20"> A veces se pueden encontrar pequeñas cantidades en las tiendas online. Pero, por desgracia, no hay garantía de que vendan el producto original y no una falsificación. Aún más raro es que Le Clere Sirene aparezca en el sitio web oficial del fabricante: tienen una cuota muy pequeña para introducir el producto en el país, por lo que todos los lotes se agotan en un instante. Las personas que necesitan un tratamiento eficaz contra la alopecia controlan el sitio web oficial las 24 horas del día para tener tiempo de hacer un pedido. Aquí están sus declaraciones:</p>
+                        
+                    <div class="dummy_rev">
+                            <img src="./img/dummy_ava.jpg" class="dummy-ava">
+                            <div class="dummy-text">
+                                <div class="dummy-author">
+                                    <p> Pablo Alonso - </p>
+                                    <img src="./img/dummy_rate.svg">
+                                </div>
+                                <p class="dummy-main"> Pasé 2 meses siguiendo la pista de cuándo estaría disponible Le Clere Sirene, ¡y acabé pidiendo sólo 2 piezas! Es un escándalo que nuestro gobierno nos haga esto. Es el único producto que realmente ayuda y no puedo comprarlo.</p>
+                                <div class="dummy-bot">
+                                    <p class="blue mob-fix2"> No me gusta</p>
+                                    <p class="blue"> Comentarios</p>
+                                    <p class="gray mob-fix"> hace un mes</p>
+                                    <p class="gray"> Comentarios:4</p>
+                                    <img src="./img/dummy-planet.svg">
+                                </div>
+                            </div>
+                            <img class="d-top" src="./img/dummy-top.svg">
+                            <img class="d-bot" src="./img/dummy-bot.svg">
+                        </div>
+<h2 class="head-link"> Haga clic aquí para ver el formulario de pedido oficial:<br><a href=""> Ir al formulario de pedido</a></h2>
+<h2 class="head-link" style="display: none;"> Aquí dejamos la dirección de la web oficial del fabricante:<br><a href=""> Ir al sitio web del fabricante</a></h2>
+</div>
+
+                        <div class="order-block">
+                            <p class="order-top"> Complejo para<br> la restauración del cabello </p>
+                            <p class="logo-main"> Le Clere<br> Sirene</p>
+                            <p class="subheader"> El remedio número 1 <br>en la lucha<br> contra la alopecia</p>
+                            <a href="" class="btn-form btn-reset btn-fix"> Pedir</a>
+                          
+                            <img src="./img/prod.png" class="main-prod">
+                            <div class="disc">
+                                <p> Descuento</p>
+                                <span> 50%</span>
+                            </div>
+                        </div>
+
+                   <div class="padding-fix">
+                   
+                        
+                    
+                    <div style="padding-left: 20px;" class="section-two-social">
+                        <a class="section-two-social__btn" href=""><img src="img/facebook.png" alt></a>
+                        <a style="margin-left: 10px;" class="section-two-social__btn" href=""><img src="img/twitter.png" alt></a>
+                    </div>
+
+                    <h2 class="section-two__title margin-10"> Comentarios</h2>
+                    <textarea class="textarea" rows="5"></textarea>
+                    <a href="" class="post_comm"> Enviar comentarios</a>
+
+                    <ul class="section-two-coments list-reset">
+                        <li class="section-two-coments__item">
+                            <div class="section-two-coments-box">
+                                <div class="section-two-coments__face">
+                                    <a href=""><img src="img/com_face_1.jpg" alt></a>
+                                </div>
+                                <div class="section-two-coments-text">
+                                    <p class="section-two-coments__name"> Ana Sofía</p>
+                                    <p class="section-two-coments__text"> ¡Por alguna razón se hace hincapié en los hombres en todas partes, y aunque yo soy una mujer, este producto me ayudó perfectamente también!</p>
+                                </div>
+                                <p class="section-two-coments__date">
+                                    <script>
+                                        dtime_nums(-11, true)
+                                    </script>
+                                </p>
+                            </div>
+                            
+                        </li>
+                        <li class="section-two-coments__item">
+                            <div class="section-two-coments-box">
+                                <div class="section-two-coments__face">
+                                    <a href=""><img src="img/com_face_3.jpg" alt></a>
+                                </div>
+                                <div class="section-two-coments-text">
+                                    <p class="section-two-coments__name"> Pedro González</p>
+                                    <p class="section-two-coments__text"> He traído Le Clere Sirene de los Estados Unidos, allí se puede adquirir libremente. Es un gran producto. Tenía una calva. No es que me moleste directamente, pero aun así. Tardó 2,5 meses en crecer. Incluso me corté el pelo por primera vez ayer.</p>
+                                    <a href=""><img src="img/com_img_1.jpg" alt></a>
+                                </div>
+                                <p class="section-two-coments__date">
+                                    <script>
+                                        dtime_nums(-17, true)
+                                    </script>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="section-two-coments__item">
+                            <div class="section-two-coments-box">
+                                <div class="section-two-coments__face">
+                                    <a href=""><img src="img/com_face_4.jpg" alt></a>
+                                </div>
+                                <div class="section-two-coments-text">
+                                    <p class="section-two-coments__name"> Fernando</p>
+                                    <p class="section-two-coments__text"> ¡¡¡¡Ahora disponible en el sitio!!!! ¡¡¡Compra pronto!!!</p>
+                                </div>
+                                <p class="section-two-coments__date">
+                                    <script>
+                                        dtime_nums(-19, true)
+                                    </script>
+                                </p>
+                            </div>
+                        </li>
+                        
+                        <li class="section-two-coments__item">
+                            <div class="section-two-coments-box">
+                                <div class="section-two-coments__face">
+                                    <a href=""><img src="img/com_face_6.jpg" alt></a>
+                                </div>
+                                <div class="section-two-coments-text">
+                                    <p class="section-two-coments__name"> Pablo Alonso -</p>
+                                    <p class="section-two-coments__text"> ¿Alguien lo ha probado? ¿Ayuda realmente?</p>
+                                </div>
+                                <p class="section-two-coments__date">
+                                    <script>
+                                        dtime_nums(-19, true)
+                                    </script>
+                                </p>
+                            </div>
+                            <div style="padding-left: 30px;" class="section-two-coments-box">
+                                <div class="section-two-coments__face">
+                                    <a href=""><img src="img/com_face_9.jpg" alt></a>
+                                </div>
+                                <div class="section-two-coments-text">
+                                    <p class="section-two-coments__name"> Diego</p>
+                                    <p class="section-two-coments__text"> Lo he estado usando durante un mes. Y lo que sí puedo asegurar es que se me ha dejado de caer el pelo, ni en el baño ni en el peine (antes se me caía a mechones). No puedo decir nada más todavía.</p>
+                                   
+                                </div>
+                                <p class="section-two-coments__date">
+                                    <script>
+                                        dtime_nums(-19, true)
+                                    </script>
+                                </p>
+                            </div>
+                            <div style="padding-left: 30px;" class="section-two-coments-box">
+                                <div class="section-two-coments__face">
+                                    <a href=""><img src="img/com_face_.jpg" alt></a>
+                                </div>
+                                <div class="section-two-coments-text">
+                                    <p class="section-two-coments__name"> Germán</p>
+                                    <p class="section-two-coments__text"> Realmente ayuda, mira mis fotos</p>
+                                    <a href=""><img src="img/com_img_3.jpg" alt></a>
+                                </div>
+                                <p class="section-two-coments__date">
+                                    <script>
+                                        dtime_nums(-19, true)
+                                    </script>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="section-two-coments__item">
+                            <div class="section-two-coments-box">
+                                <div class="section-two-coments__face">
+                                    <a href=""><img src="img/com_face_7.jpg" alt></a>
+                                </div>
+                                <div class="section-two-coments-text">
+                                    <p class="section-two-coments__name"> Juan</p>
+                                    <p class="section-two-coments__text"> No confío en nuestra farmacia. Si lo prohibieron, entonces es definitivamente un buen producto. Significa que funciona.</p>
+                                </div>
+                                <p class="section-two-coments__date">
+                                    <script>
+                                        dtime_nums(-19, true)
+                                    </script>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="section-two-coments__item">
+                            <div class="section-two-coments-box">
+                                <div class="section-two-coments__face">
+                                    <a href=""><img src="img/com_face_.jpg" alt></a>
+                                </div>
+                                <div class="section-two-coments-text">
+                                    <p class="section-two-coments__name"> José Ramón Morales</p>
+                                    <p class="section-two-coments__text"> Gracias por el enlace a la página web oficial. Llevo mucho tiempo buscando este producto.</p>
+                                </div>
+                                <p class="section-two-coments__date">
+                                    <script>
+                                        dtime_nums(-19, true)
+                                    </script>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="section-two-coments__item">
+                            <div class="section-two-coments-box">
+                                <div class="section-two-coments__face">
+                                    <a href=""><img src="img/ava1.jpg" alt></a>
+                                </div>
+                                <div class="section-two-coments-text">
+                                    <p class="section-two-coments__name"> Alberto Franco Rubio</p>
+                                    <p class="section-two-coments__text"> ¡Sí! Me las arreglé para pedirlo a tiempo. Conozco este producto de primera mano. A mi mejor amigo le ha crecido tanto el pelo con Le Clere Sirene que hasta las mujeres le envidian.</p>
+                                </div>
+                                <p class="section-two-coments__date">
+                                    <script>
+                                        dtime_nums(-19, true)
+                                    </script>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="section-two-coments__item">
+                            <div class="section-two-coments-box">
+                                <div class="section-two-coments__face">
+                                    <a href=""><img src="img/ava2.jpg" alt></a>
+                                </div>
+                                <div class="section-two-coments-text">
+                                    <p class="section-two-coments__name"> Carlos Fuentes</p>
+                                    <p class="section-two-coments__text"> He luchado contra la calvicie durante mucho tiempo. Nada funcionaba bien, ni siquiera los remedios más caros. Hasta que mi hija me trajo Le Clere Sirene de Europa. ¡¡¡¡Mira, lo usé durante medio año, y cómo se transformó mi cabeza!!!! Se lo recomiendo a todo el mundo.</p>
+                                    <a href=""><img src="img/comm1.jpg" alt></a>
+                                </div>
+                                <p class="section-two-coments__date">
+                                    <script>
+                                        dtime_nums(-19, true)
+                                    </script>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="section-two-coments__item">
+                            <div class="section-two-coments-box">
+                                <div class="section-two-coments__face">
+                                    <a href=""><img src="img/ava3.jpg" alt></a>
+                                </div>
+                                <div class="section-two-coments-text">
+                                    <p class="section-two-coments__name"> Ana Fernández</p>
+                                    <p class="section-two-coments__text"> Mi marido lo ha estado usando durante 4 meses y los resultados son increíbles.</p>
+                                </div>
+                                <p class="section-two-coments__date">
+                                    <script>
+                                        dtime_nums(-19, true)
+                                    </script>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="section-two-coments__item">
+                            <div class="section-two-coments-box">
+                                <div class="section-two-coments__face">
+                                    <a href=""><img src="img/ava4.jpg" alt></a>
+                                </div>
+                                <div class="section-two-coments-text">
+                                    <p class="section-two-coments__name"> Luis Pinto</p>
+                                    <p class="section-two-coments__text"> Compré Le Clere Sirene cuando todavía estaba disponible en la farmacia. Me maldigo por no haber adquirido lo suficiente. Gracias por el sitio web. El producto es realmente genial, mira lo que hizo en 3 meses (eso es lo que duró mi compra). Ya he pedido más. </p>
+                                    <a href=""><img src="img/comm2.jpg" alt></a>
+                                </div>
+                                <p class="section-two-coments__date">
+                                    <script>
+                                        dtime_nums(-19, true)
+                                    </script>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="section-two-coments__item">
+                            <div class="section-two-coments-box">
+                                <div class="section-two-coments__face">
+                                    <a href=""><img src="img/com_face_.jpg" alt></a>
+                                </div>
+                                <div class="section-two-coments-text">
+                                    <p class="section-two-coments__name"> Miguel Álvarez</p>
+                                    <p class="section-two-coments__text"> Este producto me devolvió no sólo el pelo de la cabeza, sino también la confianza en mí mismo. A los 22 años, empezar a quedarme calvo fue un verdadero golpe para mi autoestima. ¡Gracias por Le Clere Sirene!</p>
+                                </div>
+                                <p class="section-two-coments__date">
+                                    <script>
+                                        dtime_nums(-19, true)
+                                    </script>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="section-two-coments__item no-line">
+                            <div class="section-two-coments-box">
+                                <div class="section-two-coments__face">
+                                    <a href=""><img src="img/ava5.jpg" alt></a>
+                                </div>
+                                <div class="section-two-coments-text">
+                                    <p class="section-two-coments__name"> Josefa Rodríguez</p>
+                                    <p class="section-two-coments__text"> Gracias por el sitio web. Lo pedí para mi marido.</p>
+                                </div>
+                                <p class="section-two-coments__date">
+                                    <script>
+                                        dtime_nums(-19, true)
+                                    </script>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="section-two-button">
+                        <a style="text-align: center;" href="" class="btn-form"> PEDIR</a>
+                    </div>
+                </div>
+                </div>
+                <article class="section-two-right">
+                    <div class="wrapper">
+                        <div class="tabs">
+                            <div class="tabs__nav tabs-nav">
+                                <div class="tabs-nav__item is-activer" data-tab-name="tab-1"><a class="link__tab" href=""> Ponte al día</a></div>
+                                <div class="tabs-nav__item" data-tab-name="tab-2"> <a class="link__tab" href=""> Lo más visto</a></div>
+                            </div>
+                            <div class="tabs__content">
+                                <div class="tab is-activer tab-1">
+                                    <ul class="tabs__list list-reset">
+                                        <li class="tabs__item">
+                                            <p class="tabs-item__name"><span><a href=""> 02:49 P. M. </a></span><a href=""> PABLO ARDILA</a> </p>
+                                            <div class="tabs-item-title">
+                                                <p class="tabs-item__title"><a href=""> Mansión y carros de alta gama hicieron caer a Pablo Ardila</a></p>
+                                                <a href=""><img style="min-width: 50px;" src="img/tab_img_1.jpg" alt></a>
+                                            </div>
+                                        </li>
+                                        <li class="tabs__item">
+                                            <p class="tabs-item__name"><span><a href=""> 12:27 P. M.</a></span><a href=""> VÁNDALOS</a></p>
+                                            <div class="tabs-item-title">
+                                                <p class="tabs-item__title"><a href=""> Policía está en UCI tras ataque con bomba incendiaria en su rostro</a></p>
+                                                <a href=""><img style="min-width: 50px;" src="img/tab_img_2.jpg" alt></a>
+                                            </div>
+                                        </li>
+                                        <li class="tabs__item">
+                                            <p class="tabs-item__name"><span><a href=""> 01:46 P. M.</a></span><a href=""> GOBIERNO NACIONAL </a></p>
+                                            <div class="tabs-item-title">
+                                                <p class="tabs-item__title"><a href=""> ¿Cómo reaccionó el mundo político a la renuncia de Ceballos?</a></p>
+                                                <a href=""><img style="min-width: 50px;" src="img/tab_img_3.jpg" alt></a>
+                                            </div>
+                                        </li>
+                                        <li class="tabs__item">
+                                            <p class="tabs-item__name"><span><a href=""> 02:25 P. M.</a></span> <a href=""> CERREJÓN</a></p>
+                                            <div class="tabs-item-title">
+                                                <p class="tabs-item__title"><a href=""> Por bloqueos, Cerrejón suspende operaciones desde este domingo</a></p>
+                                                <a href=""><img style="min-width: 50px;" src="img/tab_img_4.jpg" alt></a>
+                                            </div>
+                                        </li>
+                                        <li class="tabs__item">
+                                            <p class="tabs-item__name"><span><a href=""> 04:55 P. M.</a></span>
+                                                <a href=""> LUIS ANDRÉS COLMENARES</a></p>
+                                            <div class="tabs-item-title">
+                                                <p class="tabs-item__title"><a href=""> Los pecados en la investigación del caso Colmenares</a></p>
+                                                <a href=""><img style="min-width: 50px;" src="img/tab_img_5.jpg" alt></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab tab-2">
+                                    <ul class="tabs__list list-reset">
+                                        <li class="tabs__item">
+                                            <p class="tabs-item__name"><span><a href=""> 02:49 P. M. </a></span><a href=""> PABLO ARDILA</a> </p>
+                                            <div class="tabs-item-title">
+                                                <p class="tabs-item__title"><a href=""> Mansión y carros de alta gama hicieron caer a Pablo Ardila</a></p>
+                                                <a href=""><img style="min-width: 50px;" src="img/tab_img_1.jpg" alt></a>
+                                            </div>
+                                        </li>
+                                        <li class="tabs__item">
+                                            <p class="tabs-item__name"><span><a href=""> 12:27 P. M.</a></span><a href=""> VÁNDALOS</a></p>
+                                            <div class="tabs-item-title">
+                                                <p class="tabs-item__title"><a href=""> Policía está en UCI tras ataque con bomba incendiaria en su rostro</a></p>
+                                                <a href=""><img style="min-width: 50px;" src="img/tab_img_2.jpg" alt></a>
+                                            </div>
+                                        </li>
+                                        <li class="tabs__item">
+                                            <p class="tabs-item__name"><span><a href=""> 01:46 P. M.</a></span><a href=""> GOBIERNO NACIONAL </a></p>
+                                            <div class="tabs-item-title">
+                                                <p class="tabs-item__title"><a href=""> ¿Cómo reaccionó el mundo político a la renuncia de Ceballos?</a></p>
+                                                <a href=""><img style="min-width: 50px;" src="img/tab_img_3.jpg" alt></a>
+                                            </div>
+                                        </li>
+                                        <li class="tabs__item">
+                                            <p class="tabs-item__name"><span><a href=""> 02:25 P. M.</a></span> <a href=""> CERREJÓN</a></p>
+                                            <div class="tabs-item-title">
+                                                <p class="tabs-item__title"><a href=""> Por bloqueos, Cerrejón suspende operaciones desde este domingo</a></p>
+                                                <a href=""><img style="min-width: 50px;" src="img/tab_img_4.jpg" alt></a>
+                                            </div>
+                                        </li>
+                                        <li class="tabs__item">
+                                            <p class="tabs-item__name"><span><a href=""> 04:55 P. M.</a></span>
+                                                <a href=""> LUIS ANDRÉS COLMENARES</a></p>
+                                            <div class="tabs-item-title">
+                                                <p class="tabs-item__title"><a href=""> Los pecados en la investigación del caso Colmenares</a></p>
+                                                <a href=""><img style="min-width: 50px;" src="img/tab_img_5.jpg" alt></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    
+
+
+    <script src="js/tab.js"></script>
+    
+
+
+
+
+
+</body></html>
