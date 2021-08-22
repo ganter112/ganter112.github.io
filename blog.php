@@ -46,11 +46,11 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li><a href="index.html">Αρχική σελίδα</a></li>
-                                    <li><a href="blog.html">Άρθρο</a></li>
-                                    <li><a href="contact.html">Επαφές</a></li>
-                                    <li><a href="terms.html">Όροι και προϋποθέσεις</a></li>
-                                    <li><a href="policy.html">Πολιτική προστασίας προσωπικών δεδομένων</a></li>
+                                    <li><a href="index.php">Αρχική σελίδα</a></li>
+                                    <li><a href="blog.php">Άρθρο</a></li>
+                                    <li><a href="contact.php">Επαφές</a></li>
+                                    <li><a href="terms.php">Όροι και προϋποθέσεις</a></li>
+                                    <li><a href="policy.php">Πολιτική προστασίας προσωπικών δεδομένων</a></li>
                                 </ul>
 
                             </div>
@@ -76,17 +76,17 @@
                         <div class="single-blog-post d-flex flex-wrap mt-50">
                             <!-- Thumbnail -->
                             <div class="post-thumbnail mb-50">
-                                <a href="BUUS9LxQdECIk9BUY9itWu8Ji.html"><img src="./assets/images/bruce-mars-pfykrmdiwea-unsplash.jpg" alt=""></a>
+                                <a href="BUUS9LxQdECIk9BUY9itWu8Ji.php"><img src="./assets/images/bruce-mars-pfykrmdiwea-unsplash.jpg" alt=""></a>
                             </div>
                             <!-- Content -->
                             <div class="post-content mb-50">
                                 <p class="post-date">20.01.2021</p>
-                                <a href="BUUS9LxQdECIk9BUY9itWu8Ji.html" class="post-title">
+                                <a href="BUUS9LxQdECIk9BUY9itWu8Ji.php" class="post-title">
                                     <h4>Τις καλύτερες ασκήσεις που μπορείτε να κάνετε στο σπίτι</h4>
                                 </a>
                                 <div class="post-meta">
-                                    <a href="BUUS9LxQdECIk9BUY9itWu8Ji.html"><i class="fa fa-eye"></i> 51</a>
-                                    <a href="BUUS9LxQdECIk9BUY9itWu8Ji.html"><i class="fa fa-comments"></i> 19</a>
+                                    <a href="BUUS9LxQdECIk9BUY9itWu8Ji.php"><i class="fa fa-eye"></i> 51</a>
+                                    <a href="BUUS9LxQdECIk9BUY9itWu8Ji.php"><i class="fa fa-comments"></i> 19</a>
                                 </div>
                                 <p class="post-excerpt"> <strong></strong> ασκήσεις που δυναμώνουν την καρδιά, τα αιμοφόρα αγγεία και τους πνεύμονες, αυξάνει την αντοχή, βελτιώνει το μεταβολισμό και κά...</p>
                             </div>
@@ -98,17 +98,17 @@
                         <div class="single-blog-post d-flex flex-wrap mt-50">
                             <!-- Thumbnail -->
                             <div class="post-thumbnail mb-50">
-                                <a href="f3968a52e7adc21bb6414dd93bd0cf48.html"><img src="./assets/images/jess-bailey-0uns8eqn_g8-unsplash.jpg" alt=""></a>
+                                <a href="f3968a52e7adc21bb6414dd93bd0cf48.php"><img src="./assets/images/jess-bailey-0uns8eqn_g8-unsplash.jpg" alt=""></a>
                             </div>
                             <!-- Content -->
                             <div class="post-content mb-50">
                                 <p class="post-date">20.01.2021</p>
-                                <a href="f3968a52e7adc21bb6414dd93bd0cf48.html" class="post-title">
+                                <a href="f3968a52e7adc21bb6414dd93bd0cf48.php" class="post-title">
                                     <h4>Τις καλύτερες ασκήσεις που μπορείτε να κάνετε στο σπίτι</h4>
                                 </a>
                                 <div class="post-meta">
-                                    <a href="f3968a52e7adc21bb6414dd93bd0cf48.html"><i class="fa fa-eye"></i> 154</a>
-                                    <a href="f3968a52e7adc21bb6414dd93bd0cf48.html"><i class="fa fa-comments"></i> 30</a>
+                                    <a href="f3968a52e7adc21bb6414dd93bd0cf48.php"><i class="fa fa-eye"></i> 154</a>
+                                    <a href="f3968a52e7adc21bb6414dd93bd0cf48.php"><i class="fa fa-comments"></i> 30</a>
                                 </div>
                                 <p class="post-excerpt"> <strong></strong> ασκήσεις που δυναμώνουν την καρδιά, τα αιμοφόρα αγγεία και τους πνεύμονες, αυξάνει την αντοχή, βελτιώνει το μεταβολισμό και κά...</p>
                             </div>
@@ -120,17 +120,17 @@
                         <div class="single-blog-post d-flex flex-wrap mt-50">
                             <!-- Thumbnail -->
                             <div class="post-thumbnail mb-50">
-                                <a href="ncd0vrmwBu.html"><img src="./assets/images/yayan-sopian-jqqn81j-phq-unsplash.jpg" alt=""></a>
+                                <a href="ncd0vrmwBu.php"><img src="./assets/images/yayan-sopian-jqqn81j-phq-unsplash.jpg" alt=""></a>
                             </div>
                             <!-- Content -->
                             <div class="post-content mb-50">
                                 <p class="post-date">20.01.2021</p>
-                                <a href="ncd0vrmwBu.html" class="post-title">
+                                <a href="ncd0vrmwBu.php" class="post-title">
                                     <h4>Απόρρητα μυστικά για τέλειο δέρμα από τις ομορφιές της Ανατολής</h4>
                                 </a>
                                 <div class="post-meta">
-                                    <a href="ncd0vrmwBu.html"><i class="fa fa-eye"></i> 69</a>
-                                    <a href="ncd0vrmwBu.html"><i class="fa fa-comments"></i> 17</a>
+                                    <a href="ncd0vrmwBu.php"><i class="fa fa-eye"></i> 69</a>
+                                    <a href="ncd0vrmwBu.php"><i class="fa fa-comments"></i> 17</a>
                                 </div>
                                 <p class="post-excerpt"> <strong></strong> Στην Ανατολή, οι γυναίκες είναι πολύ ευαίσθητος στην ομορφιά. Και, φυσικά, έχουν τη δική τους, καθαρά Ανατολίτικη μυστικά της ε...</p>
                             </div>
@@ -142,17 +142,17 @@
                         <div class="single-blog-post d-flex flex-wrap mt-50">
                             <!-- Thumbnail -->
                             <div class="post-thumbnail mb-50">
-                                <a href="3156594129431f3c8ca65f9dd171b55c.html"><img src="./assets/images/bruce-mars-pfykrmdiwea-unsplash.jpg" alt=""></a>
+                                <a href="3156594129431f3c8ca65f9dd171b55c.php"><img src="./assets/images/bruce-mars-pfykrmdiwea-unsplash.jpg" alt=""></a>
                             </div>
                             <!-- Content -->
                             <div class="post-content mb-50">
                                 <p class="post-date">20.01.2021</p>
-                                <a href="3156594129431f3c8ca65f9dd171b55c.html" class="post-title">
+                                <a href="3156594129431f3c8ca65f9dd171b55c.php" class="post-title">
                                     <h4>5 καλύτερες φυτικές πηγές των ωμέγα-3 λιπαρών οξέων</h4>
                                 </a>
                                 <div class="post-meta">
-                                    <a href="3156594129431f3c8ca65f9dd171b55c.html"><i class="fa fa-eye"></i> 137</a>
-                                    <a href="3156594129431f3c8ca65f9dd171b55c.html"><i class="fa fa-comments"></i> 19</a>
+                                    <a href="3156594129431f3c8ca65f9dd171b55c.php"><i class="fa fa-eye"></i> 137</a>
+                                    <a href="3156594129431f3c8ca65f9dd171b55c.php"><i class="fa fa-comments"></i> 19</a>
                                 </div>
                                 <p class="post-excerpt"> <strong></strong> Ωμέγα-3 λιπαρά οξέα είναι πολυακόρεστα λίπη, τα οποία ανήκουν στα λεγόμενα απαραίτητα λιπαρά οξέα. Ανακαλύφθηκαν πριν από έναν...</p>
                             </div>

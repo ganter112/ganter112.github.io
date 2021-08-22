@@ -46,11 +46,11 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li><a href="index.html">Αρχική σελίδα</a></li>
-                                    <li><a href="blog.html">Άρθρο</a></li>
-                                    <li><a href="contact.html">Επαφές</a></li>
-                                    <li><a href="terms.html">Όροι και προϋποθέσεις</a></li>
-                                    <li><a href="policy.html">Πολιτική προστασίας προσωπικών δεδομένων</a></li>
+                                    <li><a href="index.php">Αρχική σελίδα</a></li>
+                                    <li><a href="blog.php">Άρθρο</a></li>
+                                    <li><a href="contact.php">Επαφές</a></li>
+                                    <li><a href="terms.php">Όροι και προϋποθέσεις</a></li>
+                                    <li><a href="policy.php">Πολιτική προστασίας προσωπικών δεδομένων</a></li>
                                 </ul>
 
                             </div>
